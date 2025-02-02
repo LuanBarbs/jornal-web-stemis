@@ -60,7 +60,7 @@ const goToSearch = () => {
 
         <!-- Título -->
         <div class="d-flex flex-grow-1 justify-center">
-            <span :class="{'text-white': isDarkTheme, 'text-grey-darken-3': !isDarkTheme}">JORNAL - STEMIS</span>
+            <span class="d-none d-md-flex" :class="{'text-white': isDarkTheme, 'text-grey-darken-3': !isDarkTheme}">JORNAL - STEMIS</span>
         </div>
 
         <!-- 🔹 Input de pesquisa-->

@@ -6,7 +6,7 @@
     <v-container class="about-container">
         <v-card flat class="pa-5">
             <v-card-title class="text-body-1 text-sm-h6 text-md-h5 font-weight-bold text-center">
-                📰 Sobre o projeto Jornal.com - Desafio Stemis
+                📰 Sobre o Jornal.com - Desafio Stemis
             </v-card-title>
 
             <v-divider class="my-3"></v-divider>
