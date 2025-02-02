@@ -9,13 +9,13 @@ O principal objetivo do projeto é fornecer aos usuários uma interface simples 
 ## Funcionalidades
 
 ### 1. **Visualizar Artigos - Página Inicial (Home)**
-    - A página principal exibe uma lista de artigos de notícias mais recentes (inicialmente em português, mas pode-se encontrar artigos em outras linguas), com títulos e descrições.
+    - A página principal exibe uma lista de artigos de notícias mais recentes, com títulos e descrições.
     - O usuário pode clicar no título do artigo para ser redirecionado para o link completo.
 
 ### 2. **Pesquisa de Artigos**
     - A pesquisa é realizada por meio de um campo de entrada onde o usuário pode inserir palavras-chave.
     - Ao pressionar "Enter" ou clicar no ícone de pesquisa (no mobile), o usuário é redirecionado para uma nova página de resultados com artigos relacionados ao termo de pesquisa.
-    - Os artigos são puxados através da NewsAPI, que oferece artigos relevantes de fontes de notícias confiáveis.
+    - Os artigos são puxados através da NewsDataAPI, que oferece artigos relevantes de fontes de notícias confiáveis.
 
 ### 3. **Tema Claro/Escuro**
     - O aplicativo oferece um modo claro e escuro, permitindo que o usuário alterne entre eles.
