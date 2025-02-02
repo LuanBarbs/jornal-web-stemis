@@ -15,7 +15,7 @@ O principal objetivo do projeto é fornecer aos usuários uma interface simples 
 ### 2. **Pesquisa de Artigos**
     - A pesquisa é realizada por meio de um campo de entrada onde o usuário pode inserir palavras-chave.
     - Ao pressionar "Enter" ou clicar no ícone de pesquisa (no mobile), o usuário é redirecionado para uma nova página de resultados com artigos relacionados ao termo de pesquisa.
-    - Os artigos são puxados através da **NewsAPI**, que oferece artigos relevantes de fontes de notícias confiáveis.
+    - Os artigos são puxados através da NewsAPI, que oferece artigos relevantes de fontes de notícias confiáveis.
 
 ### 3. **Tema Claro/Escuro**
     - O aplicativo oferece um modo claro e escuro, permitindo que o usuário alterne entre eles.
@@ -26,7 +26,7 @@ O principal objetivo do projeto é fornecer aos usuários uma interface simples 
     - A página inclui também uma pequena descrição sobre o desafio proposto pela Stemis.
 
 ### 5. **Hospedagem**
-    - O projeto está hospedado na **Vercel**.
+    - O projeto está hospedado na Vercel.
 
 ## Tecnologias Utilizadas
 - **Vue.js** - Framework JavaScript para a criação da interface do usuário.
@@ -38,7 +38,7 @@ O principal objetivo do projeto é fornecer aos usuários uma interface simples 
 ## Instalação e Execução
 
 ### 1. **Clonando o Repositório**
-    git clone ...
+    git clone https://github.com/LuanBarbs/jornal-web-stemis.git
     cd jornal-web
 
 ### 2. **Instalando as Dependências**
