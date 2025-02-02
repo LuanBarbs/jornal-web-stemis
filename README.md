@@ -49,4 +49,5 @@ O principal objetivo do projeto é fornecer aos usuários uma interface simples 
 
 ## Considerações Finais
 O projeto foi desenvolvido com o objetivo de fornecer uma experiência simples de consulta de artigos de notícias, utilizando APIs externas. Ele também demonstra como utilizar as tecnologias Vue.js e Vuetify para criar interfaces responsivas e modernas.
-Por fim, agradeço à Stemis pela oportunidade de participar deste desafio!
+
+Finalmente, agradeço à Stemis pela oportunidade de participar deste desafio!
