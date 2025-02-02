@@ -36,14 +36,12 @@ export default {
             } else {
                 try {
                     const response = await axios.get(
-                        `https://newsapi.org/v2/everything?q=Apple&from=2025-02-01&sortBy=popularity&apiKey=ec5e9a3e5fe64b728a61c14fc62f5cfa`,
+                        `https://newsdata.io/api/1/news?apikey=pub_6757063b059fd746c495ad78e5baae3ada258&q=Apple&country=br`,
                         { cancelToken: this.cancelSource.token }
                     );
 
-                    console.log(response);
-
-                    if(response.data.articles && response.data.articles.length > 0) {
-                        this.articles.push(...response.data.articles);
+                    if(response.data.results && response.data.results.length > 0) {
+                        this.articles.push(...response.data.results);
                     }
                 } catch (error) {
                     if(axios.isCancel(error)) {
@@ -154,7 +152,7 @@ export default {
                                 gradient="to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)"
                             >
                                 <v-card-title class="font-weight-bold">{{ article.title }}</v-card-title>
-                                <v-card-subtitle class="font-weight-bold">{{ formatDate(principalArticle.publishedAt) }}</v-card-subtitle>
+                                <v-card-subtitle class="font-weight-bold">{{ formatDate(article.publishedAt) }}</v-card-subtitle>
                                 <v-card-actions>
                                     <v-btn
                                         color="primary"
@@ -182,29 +180,29 @@ export default {
                         gradient="to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)"
                     >
                         <v-card-title class="font-weight-bold">{{ article.title }}</v-card-title>
-                        <v-card-subtitle class="font-weight-bold">{{ formatDate(principalArticle.publishedAt) }}</v-card-subtitle>
+                        <v-card-subtitle class="font-weight-bold">{{ formatDate(article.publishedAt) }}</v-card-subtitle>
                         <v-card-actions>
                             <v-btn
                                 color="primary"
-                                :href="principalArticle.url"
+                                :href="article.url"
                                 target="_blank"
                             >Ler Mais</v-btn>
                         </v-card-actions>
                     </v-img>
                     <v-img
-                        v-else-if="article.urlToImage"
-                        :src="article.urlToImage"
+                        v-else-if="article.image_url"
+                        :src="article.image_url"
                         class="align-end text-white"
                         cover
                         height="225px"
                         gradient="to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)"
                     >
                         <v-card-title class="font-weight-bold">{{ article.title }}</v-card-title>
-                        <v-card-subtitle class="font-weight-bold">{{ formatDate(principalArticle.publishedAt) }}</v-card-subtitle>
+                        <v-card-subtitle class="font-weight-bold">{{ formatDate(article.pubDate) }}</v-card-subtitle>
                         <v-card-actions>
                             <v-btn
                                 color="primary"
-                                :href="principalArticle.url"
+                                :href="article.link"
                                 target="_blank"
                             >Ler Mais</v-btn>
                         </v-card-actions>

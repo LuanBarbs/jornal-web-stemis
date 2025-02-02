@@ -25,10 +25,10 @@ export default {
             this.loading = true;
             try {
                 const response = await axios.get(
-                    `https://newsapi.org/v2/everything?q=${encodeURIComponent(this.searchTerm)}&sortBy=popularity&apiKey=ec5e9a3e5fe64b728a61c14fc62f5cfa`,
+                    `https://newsdata.io/api/1/news?apikey=pub_6757063b059fd746c495ad78e5baae3ada258&q=${encodeURIComponent(this.searchTerm)}&country=br`,
                 );
-
-                this.articles = response.data.articles;
+                
+                this.articles = response.data.results;
             } catch (error) {
                 console.error("Erro ao buscar as notícias relacionadas:", error)
             } finally {
@@ -43,10 +43,6 @@ export default {
                 year: "numeric",
             });
         },
-        truncateText(text) {
-            // Limita o texto de descrição para 140 caracteres e adiciona "...".
-            return text.length > 140 ? text.substring(0, 140) + '...' : text;
-        }
     },
     watch: {
         "$route.query.q"(newQuery) {
@@ -76,13 +72,13 @@ export default {
             <v-col v-for="article in articles" :key="article.url" cols="12" md="6" lg="4">
                 <v-card elevation="2" max-height="400px">
                     <v-img
-                        :src="article.urlToImage"
+                        v-if="article.image_url"
+                        :src="article.image_url"
                         height="180px"
                         cover
                     ></v-img>
                     <v-card-title>{{ article.title }}</v-card-title>
-                    <v-card-subtitle>{{ formatDate(article.publishedAt) }}</v-card-subtitle>
-                    <v-card-text>{{ truncateText(article.description) }}</v-card-text>
+                    <v-card-subtitle>{{ formatDate(article.pubDate) }}</v-card-subtitle>
                     <v-card-actions>
                         <v-btn
                             color="primary"

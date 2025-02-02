@@ -41,7 +41,7 @@
                     <li>🎨 <strong>Vuetify</strong> - Biblioteca baseada no Material Design.</li>
                     <li>🔗 <strong>Vue Router</strong> - Para gerenciamento de rotas.</li>
                     <li>⚡ <strong>Axios</strong> - Para consumo de APIs externas.</li>
-                    <li>📰 <strong>NewsAPI e GNewsAPI</strong> - Fonte de artigos e notícias.</li>
+                    <li>📰 <strong>NewsData e GNewsAPI</strong> - Fonte de artigos e notícias.</li>
                     <li>🌐 <strong>Vercel</strong> - Para hospedagem do site.</li>
                 </ul>
             </v-card-text>

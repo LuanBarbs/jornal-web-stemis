@@ -32,7 +32,7 @@ O principal objetivo do projeto é fornecer aos usuários uma interface simples 
 - **Vue.js** - Framework JavaScript para a criação da interface do usuário.
 - **Vuetify** - Framework baseado em Material Design para a construção da interface.
 - **Vue Router** - Para controle de navegação entre as páginas.
-- **NewsAPI e GNewsAPI** - APIs externas para obtenção de artigos de notícias.
+- **NewsDataAPI e GNewsAPI** - APIs externas para obtenção de artigos de notícias.
 - **Vercel** - Plataforma para hospedagem do site.
 
 ## Instalação e Execução
