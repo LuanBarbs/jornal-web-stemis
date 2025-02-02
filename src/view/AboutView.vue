@@ -13,7 +13,7 @@
 
             <v-card-text class="text-body-1">
                 <p>
-                    o <strong>Jornal.com</strong> é um sistema web desenvolvido como parte do <strong>desafio técnico</strong> da empresa <strong>Stemis</strong>. O projeto simula um site de notícias dinâmico, utilizando APIs para buscar e exibir artigos em tempo real.
+                    O <strong>Jornal.com</strong> é um sistema web desenvolvido como parte do <strong>desafio técnico</strong> da empresa <strong>Stemis</strong>. O projeto simula um site de notícias dinâmico, utilizando APIs para buscar e exibir artigos em tempo real.
                 </p>
                 <p>
                     Criado com <strong>Vue.js</strong> e estilizado com <strong>Vuetify</strong>, o sistema tem como objetivo demonstrar as habilidades em consumo de APIs usando Axios, roteamento usando VueRouter, além de responsividade e experiência de usuário. 
